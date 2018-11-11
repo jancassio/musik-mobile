@@ -1,0 +1,16 @@
+export enum Fonts {
+  CircularStdBlack = 'CircularStd-Black',
+  CircularStdBold = 'CircularStd-Bold',
+  CircularStdBook = 'CircularStd-Book',
+  CircularStdMedium = 'CircularStd-Medium',
+  PhenomenaBold = 'Phenomena-Bold',
+  PhenomenaExtraBold = 'Phenomena-ExtraBold',
+  SanFranciscoDisplayBold = 'San Francisco Display Bold',
+  SanFranciscoDisplayMedium = 'San Francisco Display Medium',
+  SanFranciscoDisplayRegular = 'San Francisco Display Regular',
+  SanFranciscoTextBold = 'San Francisco Text Bold',
+  SanFranciscoTextHeavy = 'San Francisco Text Heavy',
+  SanFranciscoTextMedium = 'San Francisco Text Medium',
+  SanFranciscoTextSemibold = 'San Francisco Text Semibold',
+  SFUITextRegular = 'SF UI Text Regular',
+}
