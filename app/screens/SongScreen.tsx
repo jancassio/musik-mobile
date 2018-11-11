@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+
+import { ScreenView, T11y } from '../components'
 
 interface Style {}
 interface Props {
   style: Style
 }
 
-const getStyles = (style: Style) => StyleSheet.create({
-  view: {
-    flex: 1,
-  }
-})
-
 class SongScreen extends Component<Props, {}> {
   render() {
-    const { view } = getStyles(this.props.style);
     return (
-      <View style={view}>
-        <Text>SongScreen</Text>
-      </View>
+      <ScreenView>
+        <T11y.Headline>SongScreen</T11y.Headline>
+      </ScreenView>
     )
   }
 }

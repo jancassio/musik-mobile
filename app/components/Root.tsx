@@ -13,6 +13,8 @@ import {
   UserScreen,
   WelcomeScreen,
 } from '../screens';
+import { StyleSheet } from 'react-native';
+import { Colors } from '../constants/styles';
 
 const Stack = createStackNavigator({
     AccountRecover : { screen: AccountRecoverScreen },
@@ -31,12 +33,22 @@ const Stack = createStackNavigator({
   }
 )
 
-interface Props {}
+interface Styles {}
+interface Props {
+  styles: Styles
+}
 
-function Root(props: Props) {
+function Root({ styles }: Props) {
+  const style = getStyles(styles);
   return (
-    <Stack  />
+    <Stack style={style.stack}  />
   )
 }
+
+const getStyles = (styles: Styles) => StyleSheet.create({
+  stack: {
+    backgroundColor: Colors.Primary,
+  }
+})
 
 export default Root;
