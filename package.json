@@ -42,5 +42,10 @@
       "<rootDir>/node_modules/"
     ],
     "cacheDirectory": ".jest/cache"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
   }
 }
